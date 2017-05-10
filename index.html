@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <h2 class="center"><center> Todo App </center></h2>
+    <div ng-controller="TodoListController as todoList" class="center">
+      <span><center>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</center></span>
+      <center>[ <a href="" ng-click="todoList.archive()">Click here to delete completed items</a> ]</center>
+      <ul class="unstyled">
+        <center><li ng-repeat="todo in todoList.todos">
+          <label class="checkbox">
+            <input type="checkbox" ng-model="todo.done">
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+          </label>
+        </li></center>
+      </ul>
+      <form ng-submit="todoList.addTodo()">
+        <center><input type="text" ng-model="todoList.todoText"  size="30"
+               placeholder="Add new todo here">
+        <input class="btn-primary" type="submit" value="add"></center>
+      </form>
+    </div>
+  </body>
+</html>

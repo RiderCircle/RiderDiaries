@@ -1,0 +1,11 @@
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid brown;
+  padding: 20px;
+}
