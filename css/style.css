@@ -52,7 +52,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #fafafa !important;
+    background: #0CA48C !important;
 }
 	
 html {
@@ -110,7 +110,7 @@ button {
 }
 
 .page-body {
-    background: #ffffff;
+    background: #E3F7F4;
     box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
 }
 
@@ -337,7 +337,7 @@ button {
 .my-detail {
     text-align: center;
     margin-bottom: 30px;
-    background: #ffffff;
+    background: #E3F7F4;
     box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
 }
 
@@ -352,7 +352,7 @@ button {
 }
 
 .my-detail span {
-    color: #c1c1c1;
+    color: #E3F7F4;
     font-weight: 400;
     line-height: 30px;
     font-size: 16px;
